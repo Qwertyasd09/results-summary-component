@@ -6,7 +6,7 @@ const calculateFinalScore = (scores) => {
   }
   result = (sum / scores.length).toFixed(0);
   return result;
-}
+};
 
 export const Result = ({ scores }) => {
   let result = calculateFinalScore(scores);

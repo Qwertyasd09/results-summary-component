@@ -45,7 +45,10 @@ export const Summary = ({ scores }) => {
           );
         })}
       </ul>
-      <button aria-label="Continue" className="block w-full rounded-full bg-neutral-dark-gray-blue p-4 text-neutral-white">
+      <button
+        aria-label="Continue"
+        className="block w-full rounded-full bg-neutral-dark-gray-blue p-4 text-neutral-white"
+      >
         Continue
       </button>
     </div>
