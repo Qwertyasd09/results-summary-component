@@ -71,5 +71,10 @@ export default {
     }
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /(bg|text)-primary-(light-red|orangey-yellow|green-teal|cobalt-blue)-(textColor|background)/
+    }
+  ]
 }
 

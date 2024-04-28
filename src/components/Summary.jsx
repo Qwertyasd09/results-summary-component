@@ -27,7 +27,7 @@ export const Summary = ({ scores }) => {
                 className={`flex items-center justify-between p-4 bg-primary-${getColor(score.category)}-background rounded-lg text-lg`}
               >
                 <div className="flex items-center gap-4">
-                  <img src={score.icon} />
+                  <img alt={score.category} src={score.icon} />
                   <p
                     className={`text-primary-${getColor(score.category)}-textColor font-normal`}
                   >
@@ -45,7 +45,7 @@ export const Summary = ({ scores }) => {
           );
         })}
       </ul>
-      <button className="block w-full rounded-full bg-neutral-dark-gray-blue p-4 text-neutral-white">
+      <button aria-label="Continue" className="block w-full rounded-full bg-neutral-dark-gray-blue p-4 text-neutral-white">
         Continue
       </button>
     </div>
